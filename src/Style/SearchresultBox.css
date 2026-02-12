@@ -1,0 +1,32 @@
+.SearchresultBox {
+    position: absolute;     
+    top: 100%;              
+    left: 0;
+    margin-left: 600px; /* adjust as needed */
+    border-radius: 0.5rem;
+    background-color: #f5f5f5; /* light professional bg */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+    max-height: 350px;
+    overflow-y: auto;
+    width: 300px; /* fixed width for professional look */
+    text-align: left;
+    padding: 0.5rem 0; /* top-bottom padding */
+}
+
+.Eachresult {
+    display: block;           /* full width clickable area */
+    width: 100%;              /* span full parent width */
+    padding: 0.5rem 1rem;     /* space around text */
+    color: #222;              /* dark newspaper-like text */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-family: "Georgia", serif; /* professional serif font */
+    transition: background 0.2s, color 0.2s;
+}
+
+.Eachresult:hover {
+    background-color: #e0e0e0; /* subtle hover like news website */
+    color: #000;
+    border-radius: 3px;
+}
