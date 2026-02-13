@@ -1,0 +1,17 @@
+.search-status-container {
+    /* Aligns with the padding of your Container */
+    padding-left: 1rem; 
+    margin-top: 0.5rem;
+    
+}
+
+.searchResult {
+    font-size: 0.85rem;   /* Makes it "small" */
+    font-weight: 500;
+    color: #000001;       /* Subtle gray text */
+    font-style: italic;
+    text-transform: capitalize;
+    display: inline-block;
+    border-left: 3px solid #dc3545; /* Red accent matching your "News" badge */
+    padding-left: 10px;
+}

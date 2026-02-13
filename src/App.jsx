@@ -7,10 +7,11 @@ function App() {
 
   const [category,setCategory]=useState("breaking")
   const [resultjson,setResultJson]=useState([])
+  const [SearchQuery,SetSearchQuery]=useState("")
   return (
     <>
-      <NewsNavbar setCategory={setCategory} resultjson={resultjson} category={category}/>
-      <NewsBoard category={category} setCategory={setCategory} setResultJson={setResultJson}/>
+      <NewsNavbar setCategory={setCategory} resultjson={resultjson} category={category} SetSearchQuery={SetSearchQuery} />
+      <NewsBoard category={category} setCategory={setCategory} setResultJson={setResultJson} SearchQuery={SearchQuery}/>
       
     </>
   );

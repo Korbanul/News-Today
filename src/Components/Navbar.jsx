@@ -6,7 +6,7 @@ import { Badge, Button } from 'react-bootstrap';
 import { useForm } from "react-hook-form"
 import { use, useEffect, useState } from 'react';
 import "../Style/SearchresultBox.css"
-export default function NewsNavbar({ category, setCategory, resultjson }) {
+export default function NewsNavbar({ category, setCategory, resultjson,SetSearchQuery}) {
 
     const [searchResult, setsearchResult] = useState([])
     const [userInput, setuserinput] = useState("")
@@ -43,18 +43,23 @@ export default function NewsNavbar({ category, setCategory, resultjson }) {
         }
         if (userinput == "") {
             setsearchResult([]);
+            SetSearchQuery("");
         }
-        console.log(userinput)
+        // console.log(userinput)
 
-    }, [userinput])
+    }, [userinput,SetSearchQuery])
+    
     let onSubmit = (data) => {
-        console.log(data)
-        console.log(searchResult)
-        reset()
+        // console.log(data)
+        // console.log(searchResult)
+        
+        SetSearchQuery(data.searchbox.trim())
+        setsearchResult([]);
     }
+    
     return (
-
-        <Navbar expand="lg" className="bg-dark" data-bs-theme="dark" fixed='top'>
+        <>
+        <Navbar expand="lg" className="bg-dark" data-bs-theme="dark" sticky='top'>
             <Container fluid>
                 <Navbar.Brand  > <Button onClick={() => { setCategory("breaking") }} variant='warning'>News Today</Button></Navbar.Brand>
                 <Navbar.Toggle aria-controls='navbarScroll' />
@@ -116,6 +121,7 @@ export default function NewsNavbar({ category, setCategory, resultjson }) {
                 </Navbar.Collapse>
             </Container>
         </Navbar >
-
+        
+        </>
     );
 }
