@@ -7,10 +7,10 @@ export default function ({ news }) {
                 {/* LEFT IMAGE */}
                 <Col md={4}>
                     <Card.Img
-                        src={news.image_url ? news.image_url : "/NewsCardAltImg.jpg"}
+                        src={news.image_url ? news.image_url : "Newscardaltimg.jpg"}
                         onError={(e) => {
                             e.target.onerror = null; // prevent infinite loop
-                            e.target.src = "/NewsCardAltImg.jpg";
+                            e.target.src = "Newscardaltimg.jpg";
                         }} className="maxHeight"
                     />
                 </Col>

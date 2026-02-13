@@ -10,7 +10,7 @@ function LoadingCard() {
             <Row className="g-0">  {/*“Set the gutter (space between columns) to zero.” */}
                 <Col className='md-4'>
                     <Card.Img
-                        src="/NewsCardAltImg.jpg"
+                        src="Newscardaltimg.jpg"
                         className="maxHeight"
 
                     />
