@@ -19,7 +19,7 @@ export default function NewsBoard({ category, setResultJson, SearchQuery }) {
                 url += `&page=${nextpage}`;
             }
             setLoading(true)
-            let rawnews = await fetch(url)
+            // let rawnews = await fetch(url)
 
 
             if (!rawnews.ok) {
@@ -73,6 +73,7 @@ export default function NewsBoard({ category, setResultJson, SearchQuery }) {
 
    
     return (
+        <>
 
         <Container>
             <h3 className=" pt-3 ps-3" style={{ backgroundColor: "gray", textAlign: "center", padding: 9 }}>{category.charAt(0).toUpperCase() + category.slice(1) + " "}<Badge bg="danger"> News</Badge> </h3>
@@ -111,6 +112,9 @@ export default function NewsBoard({ category, setResultJson, SearchQuery }) {
             }
             
         </Container>
-
+        {/* <div className="d-flex justify-content-center" >
+            <small style={{textAlign:"center"}}>Copyright &copy;2026 News-Today</small>
+        </div> */}
+        </>
     );
 }

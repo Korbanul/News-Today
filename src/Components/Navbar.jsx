@@ -83,10 +83,8 @@ export default function NewsNavbar({ category, setCategory, resultjson,SetSearch
                                 {...register("searchbox",
                                     {
                                         required: { value: true, message: "Search box is empty" },
-                                        pattern: {
-                                            value: /^[a-z0-9]+$/i
-                                            , message: "Special character isn't allowed"
-                                        },
+                    
+                                    
                                         onBlur: () => clearErrors("searchbox")
 
                                     })}
