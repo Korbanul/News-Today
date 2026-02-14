@@ -19,7 +19,7 @@ export default function NewsBoard({ category, setResultJson, SearchQuery }) {
                 url += `&page=${nextpage}`;
             }
             setLoading(true)
-            // let rawnews = await fetch(url)
+            let rawnews = await fetch(url)
 
 
             if (!rawnews.ok) {
