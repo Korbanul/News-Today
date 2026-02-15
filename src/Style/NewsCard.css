@@ -2,7 +2,8 @@
     max-height: 16rem;
     object-fit: "cover"
 }
-.CardBox:hover{
+.CardBox:hover,
+.CardBox:active{
     color: red;
     cursor: pointer;
     transform: translateY(-3px);

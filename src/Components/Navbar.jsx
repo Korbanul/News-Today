@@ -66,11 +66,11 @@ export default function NewsNavbar({ category, setCategory, resultjson,SetSearch
                 <Navbar.Collapse id='navbarScroll' >
                     <Nav className='me-auto my-2 my-lg-0' style={{ maxHeight: "100px" }} navbarScroll>
                         {/* <Nav.Link onClick={()=>{setCategory("breaking")}} ><Badge bg="secondary">HOME</Badge></Nav.Link> */}
-                        <Nav.Link onClick={() => { setCategory("breaking") }} ><Badge bg="secondary">Latest</Badge></Nav.Link>
-                        <Nav.Link onClick={() => { setCategory("politics") }}><Badge bg="secondary">Politics</Badge></Nav.Link>
-                        <Nav.Link onClick={() => { setCategory("business") }}><Badge bg="secondary">Economics</Badge></Nav.Link>
-                        <Nav.Link onClick={() => { setCategory("sports") }}><Badge bg="secondary">Sports</Badge></Nav.Link>
-                        <Nav.Link onClick={() => { setCategory("technology") }}><Badge bg="secondary">Technology</Badge></Nav.Link>
+                        <Nav.Link onClick={() => { setCategory("breaking") }} ><Badge bg="secondary" className='fs-6 categoryHover'>Latest</Badge></Nav.Link>
+                        <Nav.Link onClick={() => { setCategory("politics") }}><Badge bg="secondary" className='fs-6 categoryHover'>Politics</Badge></Nav.Link>
+                        <Nav.Link onClick={() => { setCategory("business") }}><Badge bg="secondary" className='fs-6 categoryHover'>Economics</Badge></Nav.Link>
+                        <Nav.Link onClick={() => { setCategory("sports") }}><Badge bg="secondary" className='fs-6 categoryHover'>Sports</Badge></Nav.Link>
+                        <Nav.Link onClick={() => { setCategory("technology") }}><Badge bg="secondary" className='fs-6 categoryHover'>Technology</Badge></Nav.Link>
                     </Nav>
                     <Form className='d-flex' onSubmit={handleSubmit(onSubmit)}>
                         <div className="d-flex flex-column w-100 me-2">
