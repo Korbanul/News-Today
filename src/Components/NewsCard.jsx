@@ -2,7 +2,7 @@ import { Button, Card, Col, Container, Placeholder, Row } from "react-bootstrap"
 import '../Style/NewsCard.css'
 export default function ({ news }) {
     return (
-        <Card className="mb-3 w-100">
+        <Card className="mb-3 w-100 CardBox">
             <Row className="g-0">
                 {/* LEFT IMAGE */}
                 <Col md={4}>
